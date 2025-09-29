@@ -50,6 +50,10 @@ ruta14=[(-37.46973,-72.353669),
 ruta15=[(-37.46973,-72.353669),
         (-39.81422, -73.24589)]
 
+ruta16=[(-37.46973,-72.353669),
+        (-37.79519 , -72.71636)]
+
+
         
 
 
@@ -148,6 +152,14 @@ folium.Marker(location=(-37.333333,  -71.683333),
               tooltip="click",
                 popup="Antuco",
                     ).add_to(mapa)
+
+
+folium.Marker(location=(-37.79519 , -72.71636),
+                tooltip="click",
+                popup="Angol",
+                   ).add_to(mapa)
+
+
               
 
 
@@ -168,6 +180,7 @@ folium.PolyLine(ruta12, color="green", weight=2.5, opacity=1).add_to(mapa)
 folium.PolyLine(ruta13, color="yellow", weight=2.5, opacity=1).add_to(mapa)
 folium.PolyLine(ruta14, color="orange", weight=2.5, opacity=1).add_to(mapa)
 folium.PolyLine(ruta15, color="black", weight=2.5, opacity=1).add_to(mapa)
+folium.PolyLine(ruta16, color="black" , weight=2.5 , opacity=1).add_to(mapa)
 
 
 
